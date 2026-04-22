@@ -1,0 +1,55 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 3, 10, 0.92);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.25s ease;
+}
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--gold-dim);
+  max-width: 720px;
+  width: 92%;
+  max-height: 88vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 3rem;
+  animation: slideIn 0.3s ease;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold-dim) transparent;
+}
+
+.close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: none;
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.25s;
+}
+.close:hover { background: var(--gold); color: var(--void); }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: scale(0.96) translateY(16px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .modal { padding: 2rem 1.5rem; }
+}

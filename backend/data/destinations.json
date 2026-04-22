@@ -1,0 +1,97 @@
+{
+  "destinations": [
+    {
+      "id": "ancient",
+      "era": "Antiquité",
+      "title": "Rome Impériale & Égypte Antique",
+      "period": "27 av. J.-C. → 476 ap. J.-C.",
+      "shortDesc": "Assistez à l'inauguration du Colisée, dialoguez avec Cléopâtre et marchez dans la Cité Éternelle en pleine splendeur.",
+      "longDesc": "Plongez au cœur des deux plus grandes civilisations de l'Antiquité. Depuis les forums animés de Rome jusqu'aux rives mystérieuses du Nil, chaque journée vous révèle des trésors enfouis dans les sables du temps. Nos guides temporels certifiés vous accompagnent dans des expériences impossibles à vivre autrement.",
+      "price": 12500,
+      "currency": "chronos-coins",
+      "duration": { "min": 7, "max": 30 },
+      "difficulty": "Intermédiaire",
+      "tags": ["Architecture", "Gladiateurs", "Pharaons", "Forums", "Philosophie"],
+      "highlights": [
+        "Inauguration du Colisée (80 ap. J.-C.)",
+        "Audience privée avec Cléopâtre VII au bord du Nil",
+        "Visite des forums romains à l'apogée de l'Empire",
+        "Exploration des pyramides lors de leur construction",
+        "Cérémonie religieuse au Panthéon de Rome"
+      ],
+      "included": [
+        "Guide Temporel Certifié",
+        "Costumes d'époque fournis",
+        "Traducteur neural implanté",
+        "Assurance Paradoxe Causal",
+        "Hébergement en villa romaine"
+      ],
+      "warning": "Évitez de mentionner la chute de Rome. Respectez le Protocole de Non-Interférence.",
+      "color": "#c44a1a",
+      "rating": 4.9,
+      "bookings": 847
+    },
+    {
+      "id": "medieval",
+      "era": "Médiéval",
+      "title": "Châteaux & Chevaliers d'Europe",
+      "period": "500 → 1500 ap. J.-C.",
+      "shortDesc": "Vivez dans un château fort, assistez aux tournois de chevalerie et explorez les marchés animés de Paris au XIIIe siècle.",
+      "longDesc": "Le Moyen Âge n'a rien de sombre quand on le vit de l'intérieur. Découvrez la splendeur des cathédrales gothiques en construction, la noblesse des tournois de chevalerie, la richesse des marchés médiévaux. Une époque de contrastes fascinants entre mysticisme, art et aventure.",
+      "price": 9800,
+      "currency": "chronos-coins",
+      "duration": { "min": 5, "max": 21 },
+      "difficulty": "Débutant",
+      "tags": ["Châteaux", "Chevalerie", "Mystique", "Marchés", "Cathédrales"],
+      "highlights": [
+        "Tournoi de chevalerie au Château de Pierrefonds",
+        "Marché médiéval de Paris au XIIIe siècle",
+        "Construction de Notre-Dame de Paris",
+        "Audience à la Cour du Roi",
+        "Nuit dans un château fort authentique"
+      ],
+      "included": [
+        "Guide Temporel Certifié",
+        "Armure ou robe d'époque fournis",
+        "Traducteur ancien français/latin",
+        "Assurance Paradoxe Causal",
+        "Logement en chambre de château"
+      ],
+      "warning": "Période de la Peste Noire (1347-1351) formellement exclue de nos circuits pour raisons sanitaires.",
+      "color": "#2a8a3a",
+      "rating": 4.7,
+      "bookings": 1203
+    },
+    {
+      "id": "future",
+      "era": "Futur",
+      "title": "Mégalopoles du 25ème Siècle",
+      "period": "2150 → 2500 ap. J.-C.",
+      "shortDesc": "Survolez les cités flottantes, rencontrez les colonies martiennes et découvrez comment l'humanité a transformé la Terre.",
+      "longDesc": "Le futur est encore plus étrange et merveilleux que vous ne l'imaginez. Des cités anti-gravitationnelles aux jardins orbitaux, des IA conscientes aux humains augmentés — chaque heure est une révélation. Destination réservée aux voyageurs aguerris, capable d'absorber des changements paradigmatiques profonds.",
+      "price": 18200,
+      "currency": "chronos-coins",
+      "duration": { "min": 3, "max": 14 },
+      "difficulty": "Avancé",
+      "tags": ["Cyberpunk", "IA Avancée", "Colonies", "Bionique", "Anti-gravité"],
+      "highlights": [
+        "Survol de Neo-Paris en taxi volant autonome",
+        "Rencontre avec les premières colonies de Mars",
+        "Interface avec une IA de niveau 5 consciente",
+        "Concert holographique de musique quantique",
+        "Suite en hôtel anti-gravitationnel"
+      ],
+      "included": [
+        "Guide Temporel Certifié",
+        "Nano-combinaison temporelle",
+        "Traducteur universel 2.0",
+        "Assurance Paradoxe Causal",
+        "Suite en hôtel anti-gravitationnel"
+      ],
+      "warning": "Adaptation cognitive requise. Des modifications biologiques légères peuvent être nécessaires pour certains voyages.",
+      "color": "#1a6bc4",
+      "rating": 4.8,
+      "bookings": 432
+    }
+  ]
+}
