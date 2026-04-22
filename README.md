@@ -8,112 +8,113 @@ Agence de voyages temporels — Projet IA Master 1 Cybersécurité
 |--------|--------|
 | Frontend | React 18 + Vite + React Router |
 | Backend | Node.js + Express |
-| IA | Multi-provider (Anthropic, OpenAI, Mistral, Gemini, Ollama) |
+| IA Chatbot | **Mistral AI** (+ OpenAI, Anthropic, Gemini, Ollama) |
 | Prod | Docker + docker-compose |
+
+## Destinations
+
+| Destination | Époque | Prix |
+|-------------|--------|------|
+| Paris 1889 — Belle Époque | 1889 | 8 900 ⊕ |
+| Crétacé — Dinosaures | -65 000 000 | 15 500 ⊕ |
+| Florence 1504 — Renaissance | 1504 | 11 200 ⊕ |
 
 ## Structure
 
 ```
 timetravel-agency/
-├── docker-compose.yml        ← Lancer tout le projet
+├── docker-compose.yml
 ├── backend/
 │   ├── Dockerfile
-│   ├── .env.example          ← Copier en .env et remplir
-│   ├── data/                 ← destinations.json + bookings.json
+│   ├── .env.example          ← Copier en .env
+│   ├── data/
+│   │   ├── destinations.json
+│   │   └── bookings.json
 │   └── src/
-│       ├── config/           ← Variables d'environnement
-│       ├── controllers/      ← Logique métier
-│       ├── middleware/        ← Sécurité, validation, rate limit
-│       ├── routes/           ← Endpoints API
-│       └── services/         ← aiService (IA), dataService (JSON)
+│       ├── config/
+│       ├── controllers/
+│       ├── middleware/
+│       ├── routes/
+│       └── services/
+│           ├── aiService.js  ← Mistral + multi-provider
+│           └── dataService.js
 ├── frontend/
 │   ├── Dockerfile
 │   ├── nginx.conf
 │   └── src/
-│       ├── components/       ← layout/, sections/, ui/
-│       ├── hooks/            ← useChat, useBooking, useToast
-│       ├── pages/            ← HomePage, DestinationsPage
-│       └── services/         ← api.js (appels backend)
-└── docs/
-    └── API.md
+│       ├── components/
+│       ├── hooks/
+│       ├── pages/
+│       └── services/
+└── docs/API.md
 ```
 
 ---
 
-## Démarrage en développement local
-
-### 1. Configurer la clé API
+## Démarrage en local (développement)
 
 ```bash
-cd backend
-cp .env.example .env
-# Éditer .env → remplir AI_API_KEY
-```
+# 1. Configurer
+cd backend && cp .env.example .env
+# → Remplir AI_API_KEY dans .env
+# → Clé Mistral gratuite sur https://console.mistral.ai/
 
-### 2. Lancer backend + frontend
-
-```bash
-# Terminal 1
+# Terminal 1 — Backend
 cd backend && npm install && npm run dev
 
-# Terminal 2
+# Terminal 2 — Frontend
 cd frontend && npm install && npm run dev
+# → http://localhost:5173
 ```
-
-→ App sur http://localhost:5173
 
 ---
 
-## Mise en production avec Docker
-
-### 1. Configurer l'environnement
+## Mise en production (Docker)
 
 ```bash
+# 1. Configurer l'environnement
 cp backend/.env.example .env
-# Remplir dans .env :
-#   AI_API_KEY=sk-ant-...
-#   AI_PROVIDER=anthropic
-#   FRONTEND_URL=http://VOTRE_IP_OU_DOMAINE
-```
+# Remplir : AI_API_KEY=... et FRONTEND_URL=http://VOTRE_IP
 
-### 2. Lancer avec docker-compose
-
-```bash
+# 2. Lancer tout
 docker-compose --env-file .env up -d --build
+
+# → Site sur http://VOTRE_IP (port 80)
+# → API  sur http://VOTRE_IP:3001
 ```
 
-→ Frontend sur http://localhost (port 80)  
-→ Backend sur http://localhost:3001
-
-### Commandes utiles
+### Commandes Docker utiles
 
 ```bash
-# Voir les logs
-docker-compose logs -f
-
-# Redémarrer
-docker-compose restart
-
-# Arrêter
-docker-compose down
-
-# Rebuild après modif du code
-docker-compose up -d --build
+docker-compose logs -f          # Logs en direct
+docker-compose restart          # Redémarrer
+docker-compose down             # Arrêter
+docker-compose up -d --build    # Rebuild après modif
 ```
 
 ---
 
-## Providers IA supportés
+## Changer de provider IA
 
-Changer `AI_PROVIDER` dans `.env` :
+Modifier `.env` :
 
-| Provider | AI_PROVIDER | Clé |
-|----------|-------------|-----|
-| Anthropic Claude | `anthropic` | console.anthropic.com |
-| OpenAI GPT | `openai` | platform.openai.com |
-| Mistral | `mistral` | console.mistral.ai |
-| Google Gemini | `gemini` | aistudio.google.com (gratuit) |
-| Ollama (local) | `ollama` | aucune clé requise |
+```bash
+# Mistral (recommandé — gratuit pour débuter)
+AI_PROVIDER=mistral
+AI_API_KEY=votre-cle-mistral   # console.mistral.ai
+
+# OpenAI
+AI_PROVIDER=openai
+AI_API_KEY=sk-proj-...
+
+# Gemini (quota gratuit généreux)
+AI_PROVIDER=gemini
+AI_API_KEY=...                 # aistudio.google.com
+
+# Ollama (100% local, sans clé)
+AI_PROVIDER=ollama
+# → Installer ollama.com puis : ollama run llama3
+```
 
 ---
 
@@ -122,8 +123,8 @@ Changer `AI_PROVIDER` dans `.env` :
 | Méthode | Route | Description |
 |---------|-------|-------------|
 | GET | /api/health | Santé du serveur |
-| GET | /api/destinations | Liste des destinations |
-| GET | /api/destinations/:id | Détail destination |
-| POST | /api/chat | Message au chatbot IA |
+| GET | /api/destinations | Liste des 3 destinations |
+| GET | /api/destinations/:id | Détail d'une destination |
+| POST | /api/chat | Message au chatbot Chronos |
 | POST | /api/bookings | Créer une réservation |
 | GET | /api/bookings | Lister les réservations |

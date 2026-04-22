@@ -4,9 +4,9 @@ import { ToastContext } from '../../hooks/useToast.js';
 import styles from './BookingSection.module.css';
 
 const DESTINATIONS = [
-  { value: 'ancient',  label: 'Rome Impériale & Égypte Antique' },
-  { value: 'medieval', label: "Châteaux & Chevaliers d'Europe" },
-  { value: 'future',   label: 'Mégalopoles du 25ème Siècle' },
+  { value: 'paris1889',    label: 'Paris 1889 — Belle Époque' },
+  { value: 'cretace',      label: 'Crétacé — -65 millions d'années' },
+  { value: 'florence1504', label: 'Florence 1504 — La Renaissance' },
 ];
 
 const DURATIONS = [
