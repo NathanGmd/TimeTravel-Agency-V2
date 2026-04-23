@@ -1,13 +1,16 @@
 {
   "name": "timetravel-agency-backend",
   "version": "1.0.0",
-  "description": "API backend pour TimeTravel Agency — Projet IA Master 1",
+  "description": "API backend pour TimeTravel Agency",
   "main": "src/index.js",
   "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "lint": "eslint src/"
+    "build": "echo 'No build step needed'"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.24.0",
