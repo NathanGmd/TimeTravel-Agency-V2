@@ -2,7 +2,6 @@ import { useState } from 'react';
 import HeroSection from '../components/sections/HeroSection.jsx';
 import AboutSection from '../components/sections/AboutSection.jsx';
 import DestinationsSection from '../components/sections/DestinationsSection.jsx';
-import ChatSection from '../components/sections/ChatSection.jsx';
 import BookingSection from '../components/sections/BookingSection.jsx';
 
 export default function HomePage() {
@@ -22,8 +21,6 @@ export default function HomePage() {
       <AboutSection />
       <Divider />
       <DestinationsSection onReserve={handleReserve} />
-      <Divider />
-      <ChatSection />
       <Divider />
       <BookingSection preselectedDest={preselectedDest} />
     </>

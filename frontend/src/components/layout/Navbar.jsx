@@ -11,9 +11,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
@@ -21,7 +19,6 @@ export default function Navbar() {
       <ul className={styles.links}>
         <li><button onClick={() => scrollTo('about')} className={styles.link}>L'Agence</button></li>
         <li><NavLink to="/destinations" className={styles.link}>Destinations</NavLink></li>
-        <li><button onClick={() => scrollTo('chat')} className={styles.link}>Conseiller IA</button></li>
         <li><button onClick={() => scrollTo('booking')} className={styles.link}>Réserver</button></li>
       </ul>
     </nav>
