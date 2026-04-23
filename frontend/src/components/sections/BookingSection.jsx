@@ -5,7 +5,7 @@ import styles from './BookingSection.module.css';
 
 const DESTINATIONS = [
   { value: 'paris1889',    label: 'Paris 1889 — Belle Époque' },
-  { value: 'cretace',      label: 'Crétacé — -65 millions d années' },
+  { value: 'cretace',      label: 'Crétacé — -65 millions d'années' },
   { value: 'florence1504', label: 'Florence 1504 — La Renaissance' },
 ];
 
