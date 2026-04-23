@@ -17,11 +17,11 @@ export const chatValidators = [
 export const bookingValidators = [
   body('firstName').trim().isLength({ min: 2, max: 50 }).withMessage('Prénom invalide (2-50 caractères)'),
   body('lastName').trim().isLength({ min: 2, max: 50 }).withMessage('Nom invalide (2-50 caractères)'),
-  body('email').isEmail().normalizeEmail().withMessage('Email invalide'),
-  body('phone').optional().isMobilePhone().withMessage('Numéro de téléphone invalide'),
+//  body('email').isEmail().normalizeEmail().withMessage('Email invalide'),
+//  body('phone').optional().isMobilePhone().withMessage('Numéro de téléphone invalide'),
 //  body('destinationId').isIn(['paris1889', 'cretace', 'florence1504']).withMessage('Destination invalide'),
-  body('travelers').isInt({ min: 1, max: 10 }).withMessage('Nombre de voyageurs invalide (1-10)'),
+//  body('travelers').isInt({ min: 1, max: 10 }).withMessage('Nombre de voyageurs invalide (1-10)'),
 //  body('departureDate').isISO8601().toDate().withMessage('Date de départ invalide'),
 //  body('duration').isIn(['weekend', 'week', '2weeks', 'month']).withMessage('Durée invalide'),
-  body('notes').optional().trim().isLength({ max: 1000 }).withMessage('Notes trop longues (max 1000 caractères)'),
+//  body('notes').optional().trim().isLength({ max: 1000 }).withMessage('Notes trop longues (max 1000 caractères)'),
 ];
