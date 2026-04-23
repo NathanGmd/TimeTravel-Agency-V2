@@ -1,97 +1,97 @@
 {
   "destinations": [
     {
-      "id": "ancient",
-      "era": "Antiquité",
-      "title": "Rome Impériale & Égypte Antique",
-      "period": "27 av. J.-C. → 476 ap. J.-C.",
-      "shortDesc": "Assistez à l'inauguration du Colisée, dialoguez avec Cléopâtre et marchez dans la Cité Éternelle en pleine splendeur.",
-      "longDesc": "Plongez au cœur des deux plus grandes civilisations de l'Antiquité. Depuis les forums animés de Rome jusqu'aux rives mystérieuses du Nil, chaque journée vous révèle des trésors enfouis dans les sables du temps. Nos guides temporels certifiés vous accompagnent dans des expériences impossibles à vivre autrement.",
-      "price": 12500,
-      "currency": "chronos-coins",
-      "duration": { "min": 7, "max": 30 },
-      "difficulty": "Intermédiaire",
-      "tags": ["Architecture", "Gladiateurs", "Pharaons", "Forums", "Philosophie"],
-      "highlights": [
-        "Inauguration du Colisée (80 ap. J.-C.)",
-        "Audience privée avec Cléopâtre VII au bord du Nil",
-        "Visite des forums romains à l'apogée de l'Empire",
-        "Exploration des pyramides lors de leur construction",
-        "Cérémonie religieuse au Panthéon de Rome"
-      ],
-      "included": [
-        "Guide Temporel Certifié",
-        "Costumes d'époque fournis",
-        "Traducteur neural implanté",
-        "Assurance Paradoxe Causal",
-        "Hébergement en villa romaine"
-      ],
-      "warning": "Évitez de mentionner la chute de Rome. Respectez le Protocole de Non-Interférence.",
-      "color": "#c44a1a",
-      "rating": 4.9,
-      "bookings": 847
-    },
-    {
-      "id": "medieval",
-      "era": "Médiéval",
-      "title": "Châteaux & Chevaliers d'Europe",
-      "period": "500 → 1500 ap. J.-C.",
-      "shortDesc": "Vivez dans un château fort, assistez aux tournois de chevalerie et explorez les marchés animés de Paris au XIIIe siècle.",
-      "longDesc": "Le Moyen Âge n'a rien de sombre quand on le vit de l'intérieur. Découvrez la splendeur des cathédrales gothiques en construction, la noblesse des tournois de chevalerie, la richesse des marchés médiévaux. Une époque de contrastes fascinants entre mysticisme, art et aventure.",
-      "price": 9800,
-      "currency": "chronos-coins",
-      "duration": { "min": 5, "max": 21 },
-      "difficulty": "Débutant",
-      "tags": ["Châteaux", "Chevalerie", "Mystique", "Marchés", "Cathédrales"],
-      "highlights": [
-        "Tournoi de chevalerie au Château de Pierrefonds",
-        "Marché médiéval de Paris au XIIIe siècle",
-        "Construction de Notre-Dame de Paris",
-        "Audience à la Cour du Roi",
-        "Nuit dans un château fort authentique"
-      ],
-      "included": [
-        "Guide Temporel Certifié",
-        "Armure ou robe d'époque fournis",
-        "Traducteur ancien français/latin",
-        "Assurance Paradoxe Causal",
-        "Logement en chambre de château"
-      ],
-      "warning": "Période de la Peste Noire (1347-1351) formellement exclue de nos circuits pour raisons sanitaires.",
-      "color": "#2a8a3a",
-      "rating": 4.7,
-      "bookings": 1203
-    },
-    {
-      "id": "future",
-      "era": "Futur",
-      "title": "Mégalopoles du 25ème Siècle",
-      "period": "2150 → 2500 ap. J.-C.",
-      "shortDesc": "Survolez les cités flottantes, rencontrez les colonies martiennes et découvrez comment l'humanité a transformé la Terre.",
-      "longDesc": "Le futur est encore plus étrange et merveilleux que vous ne l'imaginez. Des cités anti-gravitationnelles aux jardins orbitaux, des IA conscientes aux humains augmentés — chaque heure est une révélation. Destination réservée aux voyageurs aguerris, capable d'absorber des changements paradigmatiques profonds.",
-      "price": 18200,
+      "id": "paris1889",
+      "era": "Belle Époque",
+      "title": "Paris 1889 — Belle Époque",
+      "period": "Année 1889",
+      "shortDesc": "Vivez l'inauguration de la Tour Eiffel, l'Exposition Universelle et la splendeur de la Belle Époque parisienne.",
+      "longDesc": "Paris en 1889 est à son apogée. L'Exposition Universelle attire des millions de visiteurs du monde entier, et la toute nouvelle Tour Eiffel domine le ciel de la capitale. Les cafés bruissent de conversations entre artistes, inventeurs et aristocrates. C'est l'époque du french-can-can au Moulin Rouge, des impressionnistes et d'une insouciance légendaire qui ne durera pas.",
+      "price": 8900,
       "currency": "chronos-coins",
       "duration": { "min": 3, "max": 14 },
-      "difficulty": "Avancé",
-      "tags": ["Cyberpunk", "IA Avancée", "Colonies", "Bionique", "Anti-gravité"],
+      "difficulty": "Débutant",
+      "tags": ["Belle Époque", "Tour Eiffel", "Art", "Gastronomie", "Architecture"],
       "highlights": [
-        "Survol de Neo-Paris en taxi volant autonome",
-        "Rencontre avec les premières colonies de Mars",
-        "Interface avec une IA de niveau 5 consciente",
-        "Concert holographique de musique quantique",
-        "Suite en hôtel anti-gravitationnel"
+        "Inauguration de la Tour Eiffel (31 mars 1889)",
+        "Visite de l'Exposition Universelle",
+        "Soirée au Moulin Rouge — première saison",
+        "Rencontre avec les impressionnistes à Montmartre",
+        "Dîner dans un grand restaurant parisien de l'époque"
       ],
       "included": [
         "Guide Temporel Certifié",
-        "Nano-combinaison temporelle",
-        "Traducteur universel 2.0",
+        "Tenue Belle Époque fournie",
+        "Traducteur français du XIXe siècle",
         "Assurance Paradoxe Causal",
-        "Suite en hôtel anti-gravitationnel"
+        "Logement dans un hôtel particulier haussmannien"
       ],
-      "warning": "Adaptation cognitive requise. Des modifications biologiques légères peuvent être nécessaires pour certains voyages.",
-      "color": "#1a6bc4",
+      "warning": "Évitez d'évoquer les deux guerres mondiales. Le Protocole de Non-Interférence est obligatoire.",
+      "color": "#c9a84c",
+      "rating": 4.9,
+      "bookings": 1243
+    },
+    {
+      "id": "cretace",
+      "era": "Préhistoire",
+      "title": "Crétacé — -65 millions d'années",
+      "period": "-65 000 000 av. J.-C.",
+      "shortDesc": "Observez les dinosaures dans leur habitat naturel, une nature préhistorique sauvage et grandiose, depuis une capsule sécurisée.",
+      "longDesc": "Le Crétacé supérieur est le royaume des titans. Tyrannosaures, Tricératops, Ptérosaures — la mégafaune règne sur une Terre méconnaissable, couverte de forêts tropicales denses et de mers intérieures. Tous les voyages se font depuis une capsule d'observation blindée et climatisée. C'est la destination la plus spectaculaire du catalogue, et de loin la plus vendue auprès des familles.",
+      "price": 15500,
+      "currency": "chronos-coins",
+      "duration": { "min": 2, "max": 7 },
+      "difficulty": "Débutant (capsule sécurisée)",
+      "tags": ["Dinosaures", "Nature", "Aventure", "Famille", "Paléontologie"],
+      "highlights": [
+        "Safari en capsule blindée au milieu d'un troupeau de Tricératops",
+        "Observation d'un T-Rex en liberté à moins de 50 mètres",
+        "Vol au-dessus des forêts crétacées avec vue sur un Quetzalcoatlus",
+        "Plongée dans la mer intérieure de Bélemnitella",
+        "Lever de soleil sur une Terre sans pollution lumineuse"
+      ],
+      "included": [
+        "Guide Temporel & Paléontologue certifié",
+        "Capsule d'observation blindée climatisée",
+        "Combinaison de protection atmosphérique",
+        "Assurance Paradoxe Causal",
+        "Repas lyophilisés haute-cuisine inclus"
+      ],
+      "warning": "Sortie de la capsule formellement interdite. Atmosphère légèrement différente de l'air actuel — non toxique mais déconseillée aux asthmatiques.",
+      "color": "#2a8a3a",
       "rating": 4.8,
-      "bookings": 432
+      "bookings": 892
+    },
+    {
+      "id": "florence1504",
+      "era": "Renaissance",
+      "title": "Florence 1504 — La Renaissance",
+      "period": "Année 1504",
+      "shortDesc": "Traversez Florence au sommet de la Renaissance : Michel-Ange achève le David, Léonard de Vinci est en ville, les Médicis règnent.",
+      "longDesc": "Florence en 1504 est le centre du monde civilisé. Michel-Ange vient de terminer le David, Léonard de Vinci travaille sur la Bataille d'Anghiari dans le Palazzo Vecchio, et Raphaël commence tout juste à se faire un nom. Les ateliers d'artistes foisonnent, les mécènes rivalisent de générosité, et l'architecture atteint des sommets de beauté. Une destination pour les amateurs d'art, d'histoire et d'humanisme.",
+      "price": 11200,
+      "currency": "chronos-coins",
+      "duration": { "min": 5, "max": 21 },
+      "difficulty": "Intermédiaire",
+      "tags": ["Renaissance", "Art", "Michel-Ange", "Architecture", "Gastronomie"],
+      "highlights": [
+        "Présence lors de l'inauguration du David de Michel-Ange",
+        "Visite de l'atelier de Léonard de Vinci",
+        "Audience avec Lorenzo de Médicis le Jeune",
+        "Visite des Offices quand c'est encore un bureau ducal",
+        "Cours de peinture à la fresque avec un élève de Botticelli"
+      ],
+      "included": [
+        "Guide Temporel Certifié",
+        "Tenue Renaissance florentine fournie",
+        "Traducteur toscan du XVIe siècle",
+        "Assurance Paradoxe Causal",
+        "Logement dans une villa médicéenne"
+      ],
+      "warning": "Peste bubonique encore présente en Europe. Vaccinations temporelles obligatoires avant départ. Évitez les discussions politiques sur Savonarole.",
+      "color": "#c44a1a",
+      "rating": 4.7,
+      "bookings": 654
     }
   ]
 }

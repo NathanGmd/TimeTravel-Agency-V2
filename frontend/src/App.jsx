@@ -3,6 +3,7 @@ import Navbar from './components/layout/Navbar.jsx';
 import Footer from './components/layout/Footer.jsx';
 import Cursor from './components/ui/Cursor.jsx';
 import Toast from './components/ui/Toast.jsx';
+import ChatWidget from './components/ui/ChatWidget.jsx';
 import HomePage from './pages/HomePage.jsx';
 import DestinationsPage from './pages/DestinationsPage.jsx';
 import { useToast } from './hooks/useToast.js';
@@ -22,6 +23,8 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      {/* Chatbot flottant — visible sur toutes les pages */}
+      <ChatWidget />
       <Toast />
     </ToastContext.Provider>
   );

@@ -24,9 +24,14 @@
   border: 1px solid;
 }
 
-.ancient .badge { color: var(--ancient); border-color: var(--ancient); background: rgba(196,74,26,.1); }
-.medieval .badge { color: var(--medieval); border-color: var(--medieval); background: rgba(42,138,58,.1); }
-.future .badge { color: var(--future); border-color: var(--future); background: rgba(26,107,196,.1); }
+/* Paris 1889 — doré */
+.paris1889 .badge { color: #c9a84c; border-color: #c9a84c; background: rgba(201,168,76,.1); }
+/* Crétacé — vert préhistorique */
+.cretace .badge { color: #4aaa3a; border-color: #4aaa3a; background: rgba(74,170,58,.1); }
+/* Florence — rouge Renaissance */
+.florence1504 .badge { color: #c44a1a; border-color: #c44a1a; background: rgba(196,74,26,.1); }
+/* Fallback */
+.default .badge { color: var(--gold); border-color: var(--gold); background: rgba(201,168,76,.1); }
 
 .visual { height: 270px; position: relative; overflow: hidden; }
 .canvas { width: 100%; height: 100%; display: block; }

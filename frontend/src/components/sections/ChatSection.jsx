@@ -3,15 +3,17 @@ import { useChat } from '../../hooks/useChat.js';
 import styles from './ChatSection.module.css';
 
 const SUGGESTIONS = [
-  'Quelles destinations proposez-vous ?',
-  'Comment fonctionne la technologie Chronos-Drive ?',
+  'Quelle destination me conseillez-vous ?',
+  'J\'adore les dinosaures, que proposez-vous ?',
   'Quels sont les tarifs ?',
-  'Est-ce sans risque ?',
-  'Quelle destination me conseillez-vous pour un premier voyage ?',
+  'Paris 1889, c\'est pour quel type de voyageur ?',
+  'Est-ce que c\'est sans risque ?',
 ];
 
 function formatContent(text) {
-  return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br/>');
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n/g, '<br/>');
 }
 
 export default function ChatSection() {
@@ -38,26 +40,23 @@ export default function ChatSection() {
       <div className={styles.header}>
         <span className="section-eyebrow">— 03 — Conseiller IA</span>
         <h2 className="section-title">Chronos, votre Guide</h2>
-        <p className="section-desc">Notre intelligence artificielle temporelle vous conseille personnellement pour créer le voyage de vos rêves.</p>
+        <p className="section-desc">Notre conseiller IA vous aide à trouver la destination idéale selon vos envies.</p>
       </div>
 
       <div className={styles.chatbox}>
-        {/* Top border glow */}
         <div className={styles.topLine} />
 
-        {/* Header */}
         <div className={styles.chatHeader}>
           <div className={styles.avatar}>⏳</div>
           <div>
             <h3 className={styles.agentName}>Chronos — Conseiller Temporel IA</h3>
             <span className={styles.status}>
               <span className={styles.statusDot} />
-              En ligne · Disponible 24h/24
+              En ligne · Propulsé par Mistral AI
             </span>
           </div>
         </div>
 
-        {/* Messages */}
         <div className={styles.messages}>
           {messages.map((msg, i) => (
             <div key={i} className={`${styles.message} ${msg.role === 'user' ? styles.user : styles.bot}`}>
@@ -77,16 +76,12 @@ export default function ChatSection() {
           {isLoading && (
             <div className={`${styles.message} ${styles.bot}`}>
               <div className={styles.msgAvatar}>⏳</div>
-              <div className={styles.typing}>
-                <span /><span /><span />
-              </div>
+              <div className={styles.typing}><span /><span /><span /></div>
             </div>
           )}
-
           <div ref={messagesEndRef} />
         </div>
 
-        {/* Suggestions */}
         <div className={styles.suggestions}>
           {SUGGESTIONS.map(s => (
             <button key={s} className={styles.suggestion} onClick={() => { sendMessage(s); }}>
@@ -95,24 +90,16 @@ export default function ChatSection() {
           ))}
         </div>
 
-        {/* Input */}
         <div className={styles.inputArea}>
           <textarea
             className={styles.input}
             value={input}
             onChange={e => setInput(e.target.value)}
             onKeyDown={handleKey}
-            placeholder="Posez votre question à Chronos…"
+            placeholder="Posez-moi vos questions sur les voyages temporels…"
             rows={1}
           />
-          <button
-            className={styles.sendBtn}
-            onClick={handleSend}
-            disabled={isLoading || !input.trim()}
-            aria-label="Envoyer"
-          >
-            ➤
-          </button>
+          <button className={styles.sendBtn} onClick={handleSend} disabled={isLoading || !input.trim()}>➤</button>
         </div>
       </div>
     </section>
