@@ -1,6 +1,7 @@
 # ⏳ TimeTravel Agency
 
-> Projet IA — Master 1 Cybersécurité  
+> Projet IA — Master 1 Cybersécurité
+> Nathan Germond - Paul Alba
 > Webapp interactive d'une agence de voyages temporels fictive
 
 ---
